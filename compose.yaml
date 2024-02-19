@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: ./StagApi/
+    ports:
+      - "8080:8080"
+  
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
