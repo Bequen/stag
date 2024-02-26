@@ -5,6 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>dc88bc30-696c-4989-a0e7-5d0367998fb6</UserSecretsId>
+        <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
     </PropertyGroup>
 
     <ItemGroup>
@@ -15,6 +17,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.1" />
+      <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
       <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.7.0" />
       <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.7.0" />
       <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.7.1" />
